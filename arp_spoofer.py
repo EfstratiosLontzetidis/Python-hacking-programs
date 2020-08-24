@@ -63,13 +63,13 @@ def restore(destination_ip, source_ip):
     scapy.send(packet, count=4, verbose=False)
 
 
-# loop for keep sending packets to maintain the attack
-
 # get values from command line
 
 options = get_arguments()
 target_ip = options.target_ip
 gateway_ip = options.gateway_ip
+
+# loop for keep sending packets to maintain the attack and restore arp tables when keyboard interrupt
 
 try:
     sent_packets_count = 0
