@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# this and my other programs work only on http websites,later i'll include an https bypassing program in order to use this program with, to work and for https websites
+# this and my other programs work only on http websites,later u can use it to bypass https websites using sslstrip
 
 import netfilterqueue
 import subprocess
