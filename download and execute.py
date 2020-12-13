@@ -1,4 +1,5 @@
 #!usr/bin/env python
+#creating a basic trojan
 import subprocess, requests, os, tempfile
 
 #download a file
